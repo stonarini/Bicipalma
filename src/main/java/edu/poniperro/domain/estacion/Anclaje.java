@@ -9,20 +9,20 @@ public class Anclaje {
 	Anclaje() {
 	}
 
-	protected boolean isOcupado() {
+	boolean isOcupado() {
 		return this.ocupado;
 	}
 
-	protected Movil getBici() {
+	Movil getBici() {
 		return this.bici;
 	}
 
-	protected void anclarBici(Movil bici) {
+	void anclarBici(Movil bici) {
 		this.bici = bici;
 		this.ocupado = true;
 	}
 
-	protected void liberarBici() {
+	void liberarBici() {
 		this.bici = null;
 		this.ocupado = false;
 	}

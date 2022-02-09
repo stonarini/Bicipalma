@@ -16,31 +16,31 @@ public class Anclajes {
 		}
 	}
 
-	protected Anclaje[] anclajes() {
+	Anclaje[] anclajes() {
 		return this.anclajes;
 	}
 
-	protected int numAnclajes() {
+	int numAnclajes() {
 		return this.anclajes.length;
 	}
 
-	protected void ocuparAnclaje(Movil bici, int anclaje) {
+	void ocuparAnclaje(Movil bici, int anclaje) {
 		this.anclajes[anclaje].anclarBici(bici);
 	}
 
-	protected boolean isAnclajeOcupado(int anclaje) {
+	boolean isAnclajeOcupado(int anclaje) {
 		return this.anclajes[anclaje].isOcupado();
 	}
 
-	protected void liberarAnclaje(int anclaje) {
+	void liberarAnclaje(int anclaje) {
 		this.anclajes[anclaje].liberarBici();
 	}
 
-	protected Movil getBiciAt(int anclaje) {
+	Movil getBiciAt(int anclaje) {
 		return this.anclajes[anclaje].getBici();
 	}
 
-	protected int seleccionarAnclaje() {
+	int seleccionarAnclaje() {
 		return 0;
 	}
 
